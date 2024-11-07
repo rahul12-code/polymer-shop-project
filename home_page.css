@@ -148,7 +148,7 @@ button:active{
     .items a:active{
         background-color: rgb(181, 172, 172);
         border-bottom: 1px solid black;
-    }
+    } 
 
     a{
         color: black;

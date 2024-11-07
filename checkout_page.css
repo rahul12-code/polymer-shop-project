@@ -241,6 +241,15 @@ select{
         outline: none;
     }  
 
+    .shop-btn:hover{
+        cursor: pointer;
+    }
+
+    .shop-btn:active{
+        background-color: black;
+        color: white;
+    }
+
     
     .heading-container{
         margin-bottom: 25px;
