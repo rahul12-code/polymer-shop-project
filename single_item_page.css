@@ -162,6 +162,10 @@ ul{
         text-decoration: none;
     }
 
+    .items #men_outer{
+        border-bottom: 2px solid black;
+    }
+
     .main-container{
         flex-direction: row;
         justify-content: center;
@@ -177,22 +181,22 @@ ul{
     }
 
     .photo{
-        width: 50%;
+        width: 60%;
         object-fit: contain;
     }
 
     .photo>img{
-        width: 600px; 
+        width: 600px;  
         /* max-width: 600px; */
         object-fit: contain;
     } 
 
     .detail{
-        width: 50%;
+        width: 40%;
         margin: 64px 32px;
         /* max-width: 600px; */
 
-        padding: 0;
+        /* padding-right: 90px; */
     } 
 
 

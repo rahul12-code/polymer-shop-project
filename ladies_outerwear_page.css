@@ -1,0 +1,199 @@
+
+
+.items{
+    display: none;
+}
+
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* max-width: 1440px; */
+}
+
+
+/* Main container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+    width: 100%;
+    max-width: 1440px;  /*  We can adjust it */
+    /* padding: 20px; */
+    /* margin-top: 20px; */
+}
+
+
+.image1{
+    display: flex;
+    
+    flex-direction: column;
+
+    justify-content: center;
+   
+
+    align-items: center;
+
+    gap: 8px;  /* change as per our wish */
+    margin-bottom: 15px;
+
+    font-size: 13px;
+}
+
+.image1 img{
+    display: none;
+} 
+
+.image1 #count{
+    color: gray;
+}
+
+
+/* Grid container for items*/
+
+.container{
+    /* min-height: 100vh; */
+    width: 100%;
+
+    display: grid;
+    gap:8px;
+    padding: 16px;
+
+    font-size: 13px;
+
+    grid-template-columns: repeat(2, 1fr); /* 2x2 layout */
+
+    justify-content: center;
+
+    /* overflow-x: hidden; */
+
+}  
+
+/* items-outerwears */
+
+.item{
+    display: flex;
+    flex-direction: column;
+   
+
+    align-items: center;
+    text-align: center; 
+    /* padding: 8px;   */
+
+}
+
+.item img {
+    width: 100%; 
+    height: auto;
+    margin: 10px;
+}
+
+.item .name{
+    font-weight: bold;
+}
+
+.item .price{
+    color: gray;
+}
+
+
+/* FOR FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.footer p{
+    color: gray;
+    font-size: 13px;
+}
+
+.footer button{
+    width: 120px;
+    padding: 8px;
+    margin: 8px auto 0;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+@media (min-width : 768px) {
+
+
+    .items{
+        display: flex;
+        justify-content: center; 
+
+        align-items: center; 
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .items a{
+        padding: 9px 5px;
+    }
+
+    .items a:active{
+        background-color: rgb(181, 172, 172);
+        border-bottom: 1px solid black;
+    }
+
+    .items #ladies_outer{
+        border-bottom: 2px solid black;
+    }
+
+    /* .main-container {
+        width: 100%;
+        max-width: 1440px;
+        align-items: center; 
+    }  */
+
+    .image1 img{
+        /* max-width: 250%;     */
+
+        /* max-width: 1440px; 
+        min-width: 100%; */
+
+        /* width: min(100%,1440px); */
+
+        max-width: 100%;
+        height: auto; 
+        object-fit: cover;
+        margin-bottom: 20px;
+
+      
+        display: block;
+    } 
+
+    .container {
+        grid-template-columns: repeat(3, 1fr); /* 3x3 layout */
+        /* max-width: 1440px;  */
+
+        /* max-width: 1440px; 
+        min-width: 100%; */
+
+        /* max-width: 1440px;
+        width: 100%; */
+    }
+
+    .item img {
+        max-height: 300px; 
+        max-width: 300px; 
+        height: auto;
+        margin-bottom: 30px;
+    } 
+    
+}
