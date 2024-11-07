@@ -1,0 +1,279 @@
+
+
+/* MAIN FRAME */
+
+.main-frame {
+    margin: 0 auto;
+    padding: 0 24px 48px 24px;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+/* FOR HEADING */
+
+.heading{
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 1.1em;
+    margin: 0 0 4px 0;
+   
+    font-weight: 500;
+}
+
+.heading span{
+    color: gray;
+    font-size: 12px;
+}
+
+/* FORM - SECTION 1 */
+
+.side-heading{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.input-container {
+    position: relative;
+    margin-top:24px;
+    margin-bottom: 20px;
+}
+
+.label {
+    position: absolute;
+    top: 8px; /* Initial position on top of the input */
+    left: 8px;
+    color: #757575;
+    font-size: 1.2em;
+    transition: 0.3s ease; /* Smooth transition for label movement */
+    /* pointer-events: none; */
+}
+
+.value {
+    font-size: 1em;
+    font-weight: 300;
+    color: #202020;
+    border: none;
+    padding: 8px 0;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus + .label{
+    transform: translate(-10px,-100%);
+    color: #202020;
+}
+
+input:focus{
+    border-bottom: 2px solid #202020;
+} 
+
+.flexing{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-select-label{
+    display: block;
+    font-size: 13px;
+    color: #202020;
+    padding: 10px;
+}
+
+select{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding: 8px;
+    margin: 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #757575; 
+    color: #202020;
+    font-weight: 500;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.column{
+    margin-bottom:15px;
+}
+
+.billing-address-picker {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    margin:28px 0; /* Optional, to give some spacing from other elements */
+}
+
+/* Style for the checkbox */
+.billing-address-picker input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border:1px solid #202020;
+}
+
+.billing-address{
+    color:#202020;
+    font-weight: 300;
+    margin-left: 17px;
+    align-self: flex-end;
+}
+
+/* FORM - SECTION 2 */
+
+#expiry{
+    font-size: 14px;
+    position: relative;
+    top:30px;
+}
+
+.Summary1{
+    
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.Summary2{
+    margin-top: 18px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-name{
+    font-size: 13px;
+    color: #202020;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+#billed{
+    display: none;
+}
+
+.shop-btn-container{
+    display: none;
+}
+
+.mobile-btny{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 24px;
+    width: 100%;
+    background-color: #172C50;
+    z-index: 10;
+}
+
+.cart-btny{
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+@media (min-width:768px) {
+
+
+    #section1{
+        width: 50%;
+    }
+
+    #section2{
+        width: 50%;
+    }
+
+    .form-container{
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .main-frame {
+        margin: 0 auto;
+        padding:52px 0px 52px 0px;
+        max-width: 900px;
+        overflow: hidden;
+    }
+
+    .payment{
+        margin:0px 0px 0px 80px;
+    }
+
+    .mobile-btny{
+        display: none;
+    }
+    
+   
+    .shop-btn-container{
+        display: block;
+        margin-top:20px;
+        position: relative;
+        left:0px;
+    }
+
+    .shop-btn{
+        display: inline-block;
+        box-sizing: border-box;
+        border: 2px solid #000;
+        background-color: #FFF;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        padding: 8px 44px;
+        text-align: center;
+     
+        border-radius: 0;
+        outline: none;
+    }  
+
+    
+    .heading-container{
+        margin-bottom: 25px;
+    }
+
+
+    /* FOR FOOTER */
+
+    /* .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 200px;
+        line-height: 24px;
+
+        width: 100%;
+        position: relative;
+        
+    }
+
+    .footer p{
+        color: gray;
+        font-size: 13px;
+    }
+
+    .footer button{
+        width: 120px;
+        padding: 8px;
+        margin: 8px auto 0;
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    } */
+}

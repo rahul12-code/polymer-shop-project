@@ -1,0 +1,255 @@
+
+
+.items{
+    display: none;
+}
+
+.main-container{
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 80%;
+}
+
+
+.detail{
+    box-sizing: border-box;
+    margin: 32px 0; 
+    padding: 0 24px;
+    width: 100%;
+    max-width: 600px;
+    /* padding-bottom: 100px;  */
+}
+
+h1{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.price{
+    font-size: 15px;
+    margin: 12px 0px 32px 0px;
+    color: #757575;
+}
+
+
+/* SIZE AND QUANTITY */
+
+.size-container,
+.order-quantity {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    padding-left: 0;
+    /* margin-left: 30px;
+    margin-right: 20px; */
+}
+
+.size-container label,
+.order-quantity label {
+    position: absolute;
+    color: gray;
+}
+
+.size-container select,
+.order-quantity select {
+    /* appearance: none; */
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding-left: 5rem;
+    width: 100%;
+
+    font-size: 15px;
+}
+
+.order-quantity {
+    border-bottom: 0.6px solid rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+.description h2{
+    color: black;
+    margin: 16px 0;
+    font-size: 13px;
+}
+
+#desc{
+    margin: 0;
+    font-size: 13px;
+    color: #757575;
+}
+
+ul{
+    margin: 13px 0px;
+    padding: 0px 0px 0px 40px;
+}
+
+/* ADD TO CART BUTTON */
+
+.shop-btn-container{
+    display: none;
+}
+
+.mobile-btny{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 24px;
+    width: 100%;
+    background-color: #172C50;
+    z-index: 10;
+}
+
+.cart-btny{
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.footer{
+    display: none;
+}
+
+
+@media (min-width:768px){
+
+    .items{
+        display: flex;
+        justify-content: center; 
+
+        align-items: center; 
+        gap: 30px;
+        margin-bottom: 20px;
+
+    }
+
+    .items a{
+        padding: 9px 5px;
+    }
+
+    .items a:active{
+        background-color: rgb(181, 172, 172);
+        border-bottom: 1px solid black;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .main-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        max-width: min(100%,1200px);         
+        max-height: 728px; 
+
+        padding: 0px; 
+
+        margin: 0 auto;
+    
+    }
+
+    .photo{
+        width: 50%;
+        object-fit: contain;
+    }
+
+    .photo>img{
+        width: 600px; 
+        /* max-width: 600px; */
+        object-fit: contain;
+    } 
+
+    .detail{
+        width: 50%;
+        margin: 64px 32px;
+        /* max-width: 600px; */
+
+        padding: 0;
+    } 
+
+
+    .mobile-btny{
+        display: none;
+    }
+
+    .shop-btn-container{
+        display: block;
+        margin-top:20px;
+        position: relative;
+        left:0px;
+    }
+
+    .shop-btn{
+        display: inline-block;
+        box-sizing: border-box;
+        border: 2px solid #000;
+        background-color: #FFF;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        padding: 8px 44px;
+        text-align: center;
+     
+        border-radius: 0;
+        outline: none;
+    }  
+
+    /* FOR FOOTER */
+
+    /* .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 200px;
+        line-height: 24px;
+
+        width: 100%;
+        position: relative;
+        
+    }
+
+    .footer p{
+        color: gray;
+        font-size: 13px;
+    }
+
+    .footer button{
+        width: 120px;
+        padding: 8px;
+        margin: 8px auto 0;
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    } */
+
+}  

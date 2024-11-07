@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SHOP</title>
+    <link rel="stylesheet" href="home_page.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="navbar">
+
+            <!-- For Hamburger -->
+            <a href="#" class="hamburger" onclick="toggleMenu()">
+                <img src="menu.svg">
+            </a> 
+    
+            <a href="http://127.0.0.1:5500/home_page.html" id="title"> S H O P </a>
+    
+            <a href="http://127.0.0.1:5500/cart_page.html" class="cart"> 
+                <img src="cart.svg">
+            </a>
+
+        </div>
+
+        <div class="overlay" onclick="toggleMenu()"></div> <!-- Overlay for dimming effect -->
+
+        <!-- For Hamburger Items -->
+
+        <div class="ham-items">
+            <a href="http://127.0.0.1:5500/mens_outerwear_page.html">Men's Outerwear</a>
+            <a href="#">Ladies Outerwear</a>
+            <a href="#">Men's T-Shirts</a>
+            <a href="#">Ladies T-Shirts</a>
+        </div>
+        
+    </header>
+
+    <!-- ITEMS -->
+
+    <div class="items">
+        <a href="http://127.0.0.1:5500/mens_outerwear_page.html" id="men_outer">Men's Outerwear</a>
+        <a href="#">Ladies's Outerwear</a>
+        <a href="#">Men's T-Shirts</a>
+        <a href="#">Ladies T-Shirts</a>
+    </div>
+    
+
+    <div class="main-container">
+
+        <div class="image1">
+            <img src="mens_outerwear.jpg" alt="image1"> 
+            <p>Men's Outerwear</p>
+            <a href="http://127.0.0.1:5500/mens_outerwear_page.html">
+                <button>SHOP NOW</button>
+            </a>
+        </div>
+
+        <div class="image2">
+            
+            <img src="ladies_outerwear.jpg" alt="image2" >
+            <p>Ladies's Outerwear</p>
+            <a href="#" class="link-wrapper">
+                <button>SHOP NOW</button>
+            </a>
+        </div>
+
+        <div class="image3">
+
+            <div id="image3-1">
+                <img src="mens_tshirts.jpg" alt="image3-1">
+                <p>Men's T-Shirts</p>
+                <a href="#">
+                    <button>SHOP NOW</button>
+                </a>
+            </div>
+
+            <div id="image3-2">
+                <img src="ladies_tshirts.jpg" alt="image3-2">
+                <p>Ladies T-Shirts</p>
+                <a href="#">
+                    <button>SHOP NOW</button>
+                </a>
+            </div>
+            
+        </div> 
+
+    </div>
+
+    <div class="footer">
+        <p>Made by Polymer</p>
+        <button>DEMO ONLY</button>
+    </div>
+
+    <script src="hamburger.js"></script>
+    
+</body>
+</html>

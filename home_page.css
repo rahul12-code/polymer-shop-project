@@ -1,0 +1,166 @@
+
+.items{
+    display: none;
+}
+
+
+/* Main Shop */
+
+.main-container{
+
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; 
+
+    overflow-x: hidden;
+}
+
+.main-container p{
+    font-size: 16px;
+}
+
+/* center images without full width */
+
+/* For image1 and image2 */
+
+.image1,.image2{
+    display: flex;
+    
+    flex-direction: column;
+   
+
+    align-items: center;
+
+    gap: 30px;  /* change as per our wish */
+    margin-bottom: 20px;
+}
+
+.image1 img, .image2 img {
+    max-width: 250%;    
+    height: auto; 
+    object-fit: cover;
+} 
+
+.image1 button, .image2 button{
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    padding: 8px 44px;
+    font-size: 15px;
+} 
+
+/* For image3  */
+
+.image3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    margin-bottom: 20px;
+} 
+
+.image3 > div { 
+
+    /*All the direct children divs */
+
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between; 
+
+    align-items: center;
+
+    gap: 30px;
+    margin-bottom: 20px;
+    width: 50%;
+    
+} 
+
+.image3 img {
+    max-width: 100%;  /*image fills the container width */
+    height: auto; /* Maintain aspect ratio*/
+    object-fit: cover; 
+    min-height: 15rem;
+    
+    
+} 
+
+.image3 button {
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px 24px;
+
+}  
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: black;
+    color: white;
+}
+
+/* FOR FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.footer p{
+    color: gray;
+    font-size: 13px;
+}
+
+.footer button{
+    width: 120px;
+    padding: 8px;
+    margin: 8px auto 0;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+
+@media (min-width : 768px) {
+
+
+    .items{
+        display: flex;
+        justify-content: center; 
+
+        align-items: center; 
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .items a{
+        padding: 9px 5px;
+    }
+
+    .items a:active{
+        background-color: rgb(181, 172, 172);
+        border-bottom: 1px solid black;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .image3{
+        max-width: 1440px; 
+    }
+
+    .image3 img{
+        height: 20rem;
+    }
+
+}

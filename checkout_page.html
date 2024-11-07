@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - SHOP</title>
+    <link rel="stylesheet" href="checkout_page.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="navbar">
+
+            <!-- For Hamburger -->
+            <a href="#" class="hamburger" onclick="toggleMenu()">
+                <img src="menu.svg">
+            </a> 
+    
+            <a href="http://127.0.0.1:5500/home_page.html" id="title"> S H O P </a>
+    
+            <a href="http://127.0.0.1:5500/cart_page.html" class="cart"> 
+                <img src="cart.svg">
+            </a>
+
+        </div>
+
+        <div class="overlay" onclick="toggleMenu()"></div> <!-- Overlay for dimming effect -->
+
+        <!-- For Hamburger Items -->
+
+        <div class="ham-items">
+            <a href="http://127.0.0.1:5500/mens_outerwear_page.html">Men's Outerwear</a>
+            <a href="#">Ladies Outerwear</a>
+            <a href="#">Men's T-Shirts</a>
+            <a href="#">Ladies T-Shirts</a>
+        </div>
+        
+    </header>
+
+    <!-- MAIN FRAME -->
+
+    <main class="main-frame">
+
+        <div class="heading">
+           <h1>Checkout</h1>
+           <span>Shop is a demo app-form data will not be sent</span>
+        </div>
+
+        <form class="form-container">
+
+            <section id="section1">
+
+                <h2 class="side-heading">Account Information</h2>
+                <div class="input-container">
+                    <input type="email" class="value" />
+                    <label class="label">Email</label>
+                </div>    
+                <div class="input-container">
+                    <input type="tel" class="value"  />
+                    <label class="label">Phone Number</label>
+                </div>
+
+                <h2 class="side-heading">Shipping Addresss</h2>
+                <div class="input-container">
+                    <input type="text" class="value"  />
+                    <label class="label">Address</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" class="value"   />
+                    <label class="label">City</label>
+                </div>
+
+                <div class="flexing">
+                    <div class="input-container">
+                    <input type="text" class="value" />
+                    <label for="state"  class="label">State/Province</label>
+                    </div>
+                    <div class="gap"></div>
+                    <div  class="input-container">
+                        <input type="text" class="value" />
+                        <label for="pin-code"  class="label">ZIP/Postal Code</label>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <label class="shop-select-label">Country</label>
+                    <select name="shipCountry">
+                        <option value="US" selected="">United States</option>
+                        <option value="CA">Canada</option>
+                    </select>
+                </div>
+
+                <h2 class="side-heading">Billing Addresss</h2>
+                <div class="billing-address-picker">
+                    <input type="checkbox" id="setBilling">
+                    <label for="setBilling" class="billing-address">Use different billing address</label>
+                </div>
+
+                <div  id="billed">
+
+                    <div class="input-container">
+                        <input type="text" class="value" />
+                        <label class="label">Address</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="value"   />
+                        <label class="label">City</label>
+                    </div>
+    
+                    <div class="flexing">
+                        <div class="input-container">
+                        <input type="text" class="value" />
+                        <label for="state"  class="label">State/Province</label>
+                        </div>
+                        
+                        <div  class="input-container">
+                            <input type="text" class="value" />
+                            <label for="pin-code"  class="label">ZIP/Postal Code</label>
+                        </div>
+                    </div>
+    
+                    <div class="column">
+                        <label class="shop-select-label">Country</label>
+                        <select name="shipCountry">
+                            <option value="US" selected="">United States</option>
+                            <option value="CA">Canada</option>
+                        </select>
+                    </div>
+
+                </div>
+            </section>
+
+            <section  id="section2" class="payment">
+                <h2 class="side-heading">Payment Method</h2>
+
+                <div class="input-container">
+                    <input type="text" class="value"/>
+                    <label class="label">Cardholder Name</label>
+                </div>    
+
+                <div class="input-container">
+                    <input type="number" class="value" />
+                    <label class="label">Card Number</label>
+                </div>
+
+
+                <div class="column">
+                    <label id="expiry" class="shop-select-label">Expiry</label>
+                    <div class="flexing">
+                        <div class="input-container">
+                            <select id="month" name="shipCountry">
+                                <option value="JAN" selected="">JAN</option>
+                                <option value="FEB">FEB</option>
+                                <option value="MAR">MAR</option>
+                                <option value="APR">APR</option>
+                                <option value="JUN">JUN</option>
+                                <option value="JUL">JUL</option>
+                                <option value="AUG">AUG</option>
+                                <option value="SEP">SEP</option>
+                                <option value="OCT">OCT</option>
+                                <option value="NOV">NOV</option>
+                                <option value="DEC">DEC</option>
+                                </select>
+                        </div>  
+                        <div class="gap"></div>
+                        <div class="input-container">
+                            <select id="year" name="shipCountry">
+                                <option value="2016" selected="">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                </select>
+                        </div>  
+                        <div class="gap"></div>
+                        <div  class="input-container">
+                            <input type="tel" class="value" id="CVV" placeholder=" " />
+                            <label for="cvv"  class="label">CVV</label>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="side-heading">Order Summary</h2>
+                <div class="Summary1">
+                    <div class="order-name">Men's Tech Shell Full-Zip</div>
+                    <div class="order-name">$50.20</div>    
+                </div>
+                <div class="Summary1">
+                    <div class="order-name">Anvil L/S Crew Neck - Grey</div>
+                    <div class="order-name">$22.15</div>    
+                </div>
+                <div class="Summary1">
+                    <div class="order-name">Green Flex Fleece Zip Hoodie</div>
+                    <div class="order-name">$45.65</div>    
+                </div>
+                <div class="Summary2">
+                    <div class="order-name">Total</div>
+                    <div class="order-name">$118.20</div>    
+                </div>
+
+                <div class="shop-btn-container">
+                    <button class="shop-btn">PLACE ORDER</button>
+                </div>
+                
+
+            </section> 
+
+        </form>
+    </main>
+
+    <footer class="mobile-btny">
+        <button class="cart-btny">PLACE ORDER</button>
+    </footer> 
+
+    <!-- <div class="footer">
+        <p>Made by Polymer</p>
+        <button>DEMO ONLY</button>
+    </div> -->
+
+    
+
+
+
+    <script src="hamburger.js"></script>
+    <script src="checkout_page.js"></script>
+
+    
+</body>
+</html>
