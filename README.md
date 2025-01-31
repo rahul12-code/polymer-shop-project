@@ -1,6 +1,6 @@
-# Polymer Shop Project
+# Polymer Shop Project 
 
-This project is a static e-commerce website designed as a showcase for a simple online store. Built with a focus on clean, user-friendly design, it provides users with an intuitive interface for exploring and interacting with products. Although this is a static site with limited interactivity, it offers a complete set of essential pages for an e-commerce experience.
+This project is a static e-commerce website designed as a showcase for a simple online store. Built with a focus on clean, user-friendly design, it provides users with an intuitive interface for exploring and interacting with products.
 
 ## Project Pages
 
